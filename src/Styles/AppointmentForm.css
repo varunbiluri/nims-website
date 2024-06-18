@@ -1,0 +1,106 @@
+/* Styles for the popup overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the popup is above other content */
+  }
+  
+  /* Container for the form */
+  .popup-form-container {
+    padding: 32px;
+    background: linear-gradient(to right, #ECF2FF, #FBFCFF); /* Gradient background */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  }
+  
+  /* Title of the form */
+  .popup-form-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-form-title::after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: #9D2553; /* Accent color */
+    border-radius: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+  }
+  
+  /* Form labels */
+  .popup-form-content label {
+    margin-bottom: 8px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #333; /* Text color */
+  }
+  
+  /* Form inputs */
+  .popup-form-content input[type="text"],
+  .popup-form-content input[type="email"],
+  .popup-form-content select {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    height: 40px;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 6px;
+    background-color: #fff; /* White background */
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #555; /* Text color */
+  }
+  
+  /* Submit button */
+  .popup-form-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #9D2553; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  .popup-form-submit:hover {
+    background-color: #7b1d3e; /* Darker background color on hover */
+  }
+  
+  /* Success message */
+  .popup-success-message {
+    margin-top: 20px;
+    color: green;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Error message */
+  .popup-error-message {
+    color: red;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+  
